@@ -133,12 +133,15 @@ ol {
 ol li {
   counter-increment: item; /* Incrementa o contador a cada item */
   margin: 2em;
+  color: white;
+  font-size: 20px;
 }
 ol li::before {
   content: counter(item); /* Mostra o número do contador */
   color: #ffffff; /* Define a cor do número */
-  background-color: blue; /*Cor da numeração da lista */
-  border-radius: 50%;
+  background-color: rgb(5, 117, 121); /*Cor da numeração da lista */
+  border-radius: 100%;
+  font-size: 15px;
   padding: 15px;
   font-weight: bold; /* Define a fonte em negrito */
   margin-right: 0.5em; /* Espaçamento entre o número e o texto */
