@@ -130,6 +130,7 @@ header .container {
   height: 430px;
   background-color: rgba(2, 148, 177, 0.863);
   border-radius: 100px;
+  margin-bottom: 1%;
 }
 
 .calc span {
@@ -162,9 +163,7 @@ ol li::before {
   margin-right: 0.5em; /* Espaçamento entre o número e o texto */
 }
 
-table,
-tr,
-td {
+table,tr,td {
   padding: 10px;
   font-size: 20px;
   border: 2px rgb(0, 0, 0) solid;
