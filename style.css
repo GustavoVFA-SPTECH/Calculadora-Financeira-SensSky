@@ -82,7 +82,6 @@ header .container {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  border: red 1px solid;
 }
 
 .calc input {
@@ -119,7 +118,7 @@ header .container {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  border: red 1px solid;
+
 }
 
 .suport {
@@ -163,7 +162,9 @@ ol li::before {
   margin-right: 0.5em; /* Espaçamento entre o número e o texto */
 }
 
-table, tr, td {
+table,
+tr,
+td {
   padding: 10px;
   font-size: 20px;
   border: 2px rgb(0, 0, 0) solid;
@@ -189,7 +190,6 @@ table, tr, td {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  border: red 1px solid;
 }
 
 .mensagem h1 {
@@ -198,6 +198,6 @@ table, tr, td {
 }
 
 #mensagem span {
-  color: green;
-  text-shadow: 2px 2px #000000;
+  color: greenyellow;
+  text-shadow: 3px 3px #000000;
 }

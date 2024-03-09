@@ -71,7 +71,7 @@ function validar(){ //realiza a validação de campos, caso os valores sejam 0 o
                 <td class = 'prejuizo'>${descontoMin.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
             </tr>
         </table>`;
-
+        // texto de mensagem sobre os calculos
         mensagem.innerHTML = `Com o uso do nosso sistema é garantido um desconto de <span>10</span> a <span>30%</span> nas manutenções`;
     }
 }
