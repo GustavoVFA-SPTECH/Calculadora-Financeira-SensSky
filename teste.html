@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gráfico de Colunas</title>
-<style>
-    .chart {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfico de Colunas</title>
+    <style>
+      .chart {
         width: 300px;
         height: 100%;
         border: 1px solid #000000;
@@ -14,46 +14,73 @@
         border-radius: 15px;
         justify-content: space-around;
         align-items: flex-end;
-    }
-    .column {
+      }
+      .column {
         bottom: 0;
         width: 60px; /* Largura das colunas */
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 1%, rgba(82,8,8,1) 37%, rgba(255,0,0,1) 100%); /* Cor da primeira coluna */
-    }
-    .column.two {
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 3%, rgba(29,121,9,1) 55%, rgba(35,244,0,1) 100%); /* Cor da segunda coluna */
-    }
-    .label {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 1%,
+          rgba(82, 8, 8, 1) 37%,
+          rgba(255, 0, 0, 1) 100%
+        ); /* Cor da primeira coluna */
+      }
+      .column.two {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 3%,
+          rgba(29, 121, 9, 1) 55%,
+          rgba(35, 244, 0, 1) 100%
+        ); /* Cor da segunda coluna */
+      }
+      .label {
         width: 100%;
         text-align: center;
-    }
-</style>
-</head>
-<body>
-
-<div class="chart">
-    <div id="column1" class="column">
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart">
+      <div id="column1" class="column">
         <div class="label">Coluna 1</div>
-    </div>
-    <div id="column2" class="column two">
+      </div>
+      <div id="column2" class="column two">
         <div class="label">Coluna 2</div>
+      </div>
     </div>
-</div>
 
-<script>
-    // Função para alterar a altura da coluna com base em um valor
-    function setColumnHeight(columnId, height) {
+    <script>
+      // Função para alterar a altura da coluna com base em um valor
+      function setColumnHeight(columnId, height) {
         const column = document.getElementById(columnId);
-        column.style.height = height + 'px';
+        column.style.height = height + "px";
         column.style.bottom = 0; // Reseta a posição bottom para 0
-    }
+      }
 
-    // Exemplo: alterar a altura das colunas
-    setColumnHeight('column1', 100);
-    setColumnHeight('column2', 150);
-</script>
-
-</body>
+      // Exemplo: alterar a altura das colunas
+      setColumnHeight("column1", 100);
+      setColumnHeight("column2", 150);
+    </script>
+  </body>
 </html>
+
+
+<table>
+  <tr>
+    <th>Descontos</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>10%</td>
+    <td></td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>30%</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>

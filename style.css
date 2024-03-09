@@ -12,7 +12,7 @@ body {
   margin: auto;
 }
 
-.titulo{
+.titulo {
   display: flex;
   align-items: center;
   height: 100px;
@@ -53,6 +53,7 @@ header .container {
   color: #ffffff;
   align-items: center;
 }
+
 .navbar li {
   transition: 0.5s;
 }
@@ -71,6 +72,7 @@ header .container {
   border-radius: 100px;
   display: flex;
   padding: 50px;
+  justify-content: space-around;
 }
 
 .calc .conta {
@@ -84,28 +86,40 @@ header .container {
 }
 
 .calc input {
-  width: 352px;
-  height: 20px;
+  font-size: 18px;
+  width: 380px;
+  height: 30px;
   border-radius: 15px;
   border: none;
   padding: 5px;
   text-indent: 3px;
 }
+
 .calc button {
-  border-radius: 15px;
-  height: 25px;
-  width: 150px;
+  border-radius: 30px;
+  height: 40px;
+  width: 160px;
   border: none;
 }
 
-.calc button{
-  transition: .5s;
+.calc button {
+  transition: 0.5s;
 }
 
 .calc button:hover {
   border: none;
   color: white;
   background-color: rgba(2, 148, 177, 0.863);
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: red 1px solid;
 }
 
 .suport {
@@ -130,12 +144,14 @@ ol {
   display: flex;
   flex-direction: column;
 }
+
 ol li {
   counter-increment: item; /* Incrementa o contador a cada item */
   margin: 2em;
   color: white;
   font-size: 20px;
 }
+
 ol li::before {
   content: counter(item); /* Mostra o número do contador */
   color: #ffffff; /* Define a cor do número */
@@ -146,4 +162,3 @@ ol li::before {
   font-weight: bold; /* Define a fonte em negrito */
   margin-right: 0.5em; /* Espaçamento entre o número e o texto */
 }
-

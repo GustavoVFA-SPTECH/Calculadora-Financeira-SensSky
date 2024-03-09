@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora SensSky</title>
   </head>
@@ -21,17 +22,21 @@
     </div>
     <div class="calc">
         <div class="conta">
-            <span></span><input type="text">
-            <span></span><input type="text">
-            <button>Calcular</button>
+            <span>Aviões na Frota</span><input type="number" placeholder="Quantidade de Aviões na frota" id="qtdFrota">
+            <span>Manutenções</span><input type="number" placeholder="Media de Manutenções anuais por avião" id="manutencoes">
+            <span>Valor Médio</span><input type="text" placeholder="Valor médio por manutenção" id="val">
+            <button onclick="validar()">Calcular</button>
+        </div>
+        <div class="tabela" id="tabela">
+          
         </div>
     </div>
     <div class="suport">
         <ol class="passos">
-            <li><span>Insira</span></li>
-            <li><span>Insira</span></li>
-            <li><span>Insira</span></li>
-            <li><span>Insira</span></li>
+            <li><span>Insira o número de Aviões na frota;</span></li>
+            <li><span>Insira a Quantidade média de Manutenções por anuais por avião;</span></li>
+            <li><span>Insira o valor médio por manutenção;</span></li>
+            <li><span>Clique no botão "Calcular";</span></li>
         </ol>
     </div>
   </body>
