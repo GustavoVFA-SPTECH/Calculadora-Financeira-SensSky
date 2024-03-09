@@ -162,3 +162,23 @@ ol li::before {
   font-weight: bold; /* Define a fonte em negrito */
   margin-right: 0.5em; /* Espaçamento entre o número e o texto */
 }
+
+table, tr, td {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px rgb(0, 0, 0) solid;
+  border-collapse: collapse;
+}
+
+.descontos {
+  color: greenyellow;
+}
+
+.prejuizo {
+  color: red;
+}
+
+.inicial {
+  color: whitesmoke;
+}
+

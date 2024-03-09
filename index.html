@@ -22,13 +22,13 @@
     </div>
     <div class="calc">
         <div class="conta">
-            <span>Aviões na Frota</span><input type="number" placeholder="Quantidade de Aviões na frota" id="qtdFrota">
-            <span>Manutenções</span><input type="number" placeholder="Media de Manutenções anuais por avião" id="manutencoes">
-            <span>Valor Médio</span><input type="text" placeholder="Valor médio por manutenção" id="val">
+            <span>Aviões na Frota</span><input type="number" placeholder="Quantidade de Aviões na frota" id="qtdFrota" required>
+            <span>Manutenções</span><input type="number" placeholder="Media de Manutenções anuais por avião" id="manutencoes" required>
+            <span>Valor Médio</span><input type="text" placeholder="Valor médio por manutenção" id="val" required>
             <button onclick="validar()">Calcular</button>
         </div>
+        <div class="mensagem"></div>
         <div class="tabela" id="tabela">
-          
         </div>
     </div>
     <div class="suport">
