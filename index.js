@@ -10,7 +10,7 @@ function capturar(){ //captura os dados dos campos e atribui a variaveis
     }
 }
 
-function calcular(){
+function calcular(){ // Retorna os valores dos calculos efetuados
     const {frota, mediaManu, valor} = capturar();
 
     const preco = frota * (valor * mediaManu);
@@ -29,15 +29,15 @@ function calcular(){
 }
 
 
-function validar(){ //realiza a validação de campos, caso os valores sejam 0
+function validar(){ //realiza a validação de campos, caso os valores sejam 0 ou menores
     const {frota, mediaManu, valor} = capturar();
     const {valorMax, valorMin, descontoMax, descontoMin, preco} = calcular();
     const descontoMed = (descontoMax + descontoMin)/2;
 
-    if(frota <= 0 || mediaManu <= 0 || valor <= 0){
+    if(frota <= 0 || mediaManu <= 0 || valor <= 0){ // Retorna uma mensagem de erro caso o usuario insira 0 ou valores menores que 0
         alert('Preencha os campos corretamente e clique novamente');
         return false;
-    }else{
+    }else{ // mostra a tabela com os calculos após a validação ser realizada
         tabela.innerHTML = `
         <table>
     
@@ -71,5 +71,7 @@ function validar(){ //realiza a validação de campos, caso os valores sejam 0
                 <td class = 'prejuizo'>${descontoMin.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
             </tr>
         </table>`;
+
+        mensagem.innerHTML = `Com o uso do nosso sistema é garantido um desconto de <span>10</span> a <span>30%</span> nas manutenções`;
     }
 }
