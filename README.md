@@ -21,10 +21,12 @@ NumManutenções = (Qtd_Manutenções * Qtd_aviões) <br>
 
 ValorAnual = (NumManutenções * ValorManutenção) <br>
 
-DescontoMin = ValorAnual * 0.1
+DescontoMin = ValorAnual * 0.1 <br>
 
-DescontoMax = ValorAnual * 0.3
+DescontoMax = ValorAnual * 0.3 <br>
+
+DescontoMédio = (DescontoMax + DescontoMin) / 2 <br>
 
 
-
+<h3>Resultados</h3>
 
