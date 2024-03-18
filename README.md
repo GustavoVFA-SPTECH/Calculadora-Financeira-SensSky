@@ -1,6 +1,6 @@
 # Calculadora Financeira SensSky
 
-Calculadora financeira para a aula de Algoritimos;
+<h3>Calculadora financeira para a aula de Algoritimos</h3>
 
 
 
@@ -10,6 +10,21 @@ Calculadora financeira para a aula de Algoritimos;
             <li><span>Clique no botão "Calcular";</span></li>
 
 
+
 <h3>
  Calculos:
 </h3>
+
+A Calculadora realiza-ra as seguintes contas <br>
+
+NumManutenções = (Qtd_Manutenções * Qtd_aviões) <br>
+
+ValorAnual = (NumManutenções * ValorManutenção) <br>
+
+DescontoMin = ValorAnual * 0.1
+
+DescontoMax = ValorAnual * 0.3
+
+
+
+
