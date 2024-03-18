@@ -30,3 +30,29 @@ DescontoMédio = (DescontoMax + DescontoMin) / 2 <br>
 
 <h3>Resultados</h3>
 
+ <table>
+        <tr>
+            <th>Gastos com Manutenção</th>
+            <td class = 'inicial'>${preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+        </tr>
+        <tr>
+            <th>Desconto 30%</th>
+            <td class = 'descontos'>${valorMax.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+        </tr>
+        <tr>
+            <th>Desconto 10%</th>
+            <td class = 'descontos'>${valorMin.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+        </tr>
+        <tr>
+            <th>Desconto médio</th>
+            <td class = 'descontos'>${descontoMed.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+        </tr>
+            <tr>
+                <th>Prejuizo max</th>
+                <td class = 'prejuizo'>${descontoMax.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+            </tr>
+            <tr>
+                <th>Prejuizo min</th>
+                <td class = 'prejuizo'>${descontoMin.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+            </tr>
+        </table>
