@@ -33,26 +33,26 @@ DescontoMédio = (DescontoMax + DescontoMin) / 2 <br>
  <table>
         <tr>
             <th>Gastos com Manutenção</th>
-            <td class = 'inicial'></td>
+            <td class = 'inicial'>R$ Exemplo</td>
         </tr>
         <tr>
             <th>Desconto 30%</th>
-            <td class = 'descontos'></td>
+            <td class = 'descontos'>R$ Exemplo</td>
         </tr>
         <tr>
             <th>Desconto 10%</th>
-            <td class = 'descontos'></td>
+            <td class = 'descontos'>R$ Exemplo</td>
         </tr>
         <tr>
             <th>Desconto médio</th>
-            <td class = 'descontos'></td>
+            <td class = 'descontos'>R$ Exemplo</td>
         </tr>
             <tr>
                 <th>Prejuizo max</th>
-                <td class = 'prejuizo'></td>
+                <td class = 'prejuizo'>R$ Exemplo</td>
             </tr>
             <tr>
                 <th>Prejuizo min</th>
-                <td class = 'prejuizo'></td>
+                <td class = 'prejuizo'>R$ Exemplo</td>
             </tr>
         </table>
